@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/style.css">
+    <title>Document</title>
+</head>
+<body>
+    <!-- Aleksa -->
+    <h1>Apply for job:</h1>
+
+    <form action="https://httpbin.org/anything" method="post">
+
+        <fieldset class="firstname">
+            <label for="firstname">First name:</label>
+            <input type="text" id="firstname" name="firstname" required>
+        </fieldset>
+
+        <fieldset class="lastname">
+            <label for="lastname">Last name:</label>
+            <input type="text" id="lastname" name="lastname" required>
+        </fieldset>
+    <!-- /Aleksa -->
+
+
+    <!-- Antonio -->
+        <label for="password"
+        >Password:
+        <img
+          src="/svg/lock-solid.svg"
+          alt="Lock icon for password"
+          width="1%"
+          height="1%"
+      /></label>
+      <input type="password" id="password" placeholder="Password:  ******" />
+      <label for="textarea"
+        >Bigger Text Field:
+        <img
+          src="/svg/keyboard-solid.svg"
+          alt="Keyboard icon for textarea"
+          width="2%"
+          height="2%"
+      /></label>
+      <textarea name="textarea" id="textarea"></textarea>
+    <!-- /Antonio -->
+
+
+    <!-- Sara -->
+        <fieldset class="work-experience">
+            <p>How many years of work experience do you have?</p>
+            <label for="0-3">0 - 3 years</label>
+            <input type="radio" value="0-3" name="work-experience" id="0-3">
+            
+            <label for="4-7">4 - 7 years</label>
+            <input type="radio" value="4-7" name="work-experience" id="4-7">
+
+            <label for="7-10">7 - 10 years</label>
+            <input type="radio" value="7-10" name="work-experience" id="7-10">
+
+            <label for="10-plus">10+ years</label>
+            <input type="radio" value="10-plus" name="work-experience" id="10-plus">    
+        </fieldset>
+    <!-- /Sara -->
+
+
+    <!-- Stella -->
+        <div class="checkbox-container">
+            <p>Vilka tider kan du tänka dig att arbeta?</p>
+            <fieldset class="checkbox">
+                <input type="checkbox" id="pass1" name="pass1" value="Morgonpass">
+                <label for="pass1">Morgonpass</label><br>
+                <input type="checkbox" id="pass2" name="pass2" value="Kvallspass">
+                <label for="pass3">Kvällspass</label><br>
+                <input type="checkbox" id="pass3" name="pass3" value="Helgpass">
+                <label for="pass3">Helgpass</label>
+            </fieldset>
+        </div>
+    <!-- /Stella -->
+    </form>
+</body>
+</html>
