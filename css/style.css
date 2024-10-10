@@ -5,21 +5,62 @@
     box-sizing: border-box;
 }
 
-/* Aleksa */
+body {
+    font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
+    background-color: #f1f1f1;
+}
 
-/* /Aleksa */
+form {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-areas: 
+    'firstname lastname'
+    'password password'
+    'textarea textarea'
+    'radio radio'
+    'checkbox checkbox';
 
+    gap: 0.5rem;
+}
 
-/* Antonio */
+.firstname {
+    grid-area: firstname;
+}
 
-/* /Antonio */
+.lastname {
+    grid-area: lastname;
+}
 
+.password {
+    grid-area: password;
+}
 
-/* Sara */
+.textarea {
+    grid-area: textarea;
+}
 
-/* /Sara */
+.work-experience {
+    grid-area: radio;
+}
 
+.checkbox-container {
+    grid-area: checkbox;
+}
 
-/* Stella */
+form > *, h1 {
+    padding: 0.5rem;
+}
 
-/* /Stella */
+.password img {
+    width: 0.8rem;
+    height: 0.8rem;
+}
+
+.textarea img {
+    width: 0.8rem;
+    height: 0.8rem;
+}
+
+fieldset {
+    border: none;
+}

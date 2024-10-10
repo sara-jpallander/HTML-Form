@@ -8,7 +8,7 @@
 </head>
 <body>
     <!-- Aleksa -->
-    <h1>Apply for job:</h1>
+    <h1>Apply for this job:</h1>
 
     <form action="https://httpbin.org/anything" method="post">
 
@@ -25,41 +25,32 @@
 
 
     <!-- Antonio -->
-        <label for="password"
-        >Password:
-        <img
-          src="/svg/lock-solid.svg"
-          alt="Lock icon for password"
-          width="1%"
-          height="1%"
-      /></label>
-      <input type="password" id="password" placeholder="Password:  ******" />
-      <label for="textarea"
-        >Bigger Text Field:
-        <img
-          src="/svg/keyboard-solid.svg"
-          alt="Keyboard icon for textarea"
-          width="2%"
-          height="2%"
-      /></label>
-      <textarea name="textarea" id="textarea"></textarea>
+    <fieldset class="password">
+        <label for="password">Password: <img src="/svg/lock-solid.svg" alt="Lock icon for password"/></label>
+        <input type="password" name="password" id="password" placeholder="Password:  ******" />
+    </fieldset>
+
+    <fieldset class="textarea">
+        <label for="textarea">Bigger Text Field: <img src="/svg/message-regular.svg" alt="Keyboard icon for textarea"/></label>
+        <textarea name="textarea" id="textarea"></textarea>
+    </fieldset>
     <!-- /Antonio -->
 
 
     <!-- Sara -->
         <fieldset class="work-experience">
             <p>How many years of work experience do you have?</p>
-            <label for="0-3">0 - 3 years</label>
             <input type="radio" value="0-3" name="work-experience" id="0-3">
+            <label for="0-3">0 - 3 years</label><br>
             
-            <label for="4-7">4 - 7 years</label>
             <input type="radio" value="4-7" name="work-experience" id="4-7">
+            <label for="4-7">4 - 7 years</label><br>
 
-            <label for="7-10">7 - 10 years</label>
             <input type="radio" value="7-10" name="work-experience" id="7-10">
+            <label for="7-10">7 - 10 years</label><br>
 
-            <label for="10-plus">10+ years</label>
-            <input type="radio" value="10-plus" name="work-experience" id="10-plus">    
+            <input type="radio" value="10-plus" name="work-experience" id="10-plus">
+            <label for="10-plus">10+ years</label><br>
         </fieldset>
     <!-- /Sara -->
 
